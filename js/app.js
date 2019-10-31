@@ -1,3 +1,19 @@
+(function() {
+	const showMoreBtn = document.querySelector('#showmore');
+	showMoreBtn.addEventListener('click', function() {
+		const displayNone = document.querySelector('.togglenone');
+		if (showMoreBtn.textContent == 'Show More') {
+			displayNone.classList.toggle('togglenone');
+			showMore.textContent = 'Show Less';
+		}
+		// else {
+		// 	displayNone.classList.toggle('togglenone');
+		// 	displayNone.className = 'togglenone';
+		// 	showMore.textContent = 'Show More';
+		// }
+	});
+})();
+
 function toggleMenu() {
 	let menuBar = $('#navMenu');
 	menuBar.toggle();

@@ -8,20 +8,12 @@
 }
 
 /* HEADER STYLE STARTS */
-body {
+html {
 	font-family: 'Open Sans', segoe UI, sans-serif;
 	scroll-behavior: smooth;
 }
 a:hover {
 	text-decoration: none;
-}
-
-#img {
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: -1;
-	width: 300px;
 }
 
 /* background*/
@@ -33,11 +25,20 @@ a:hover {
 	padding-bottom: 20px;
 	position: relative;
 }
-#header #logo {
-	width: 250px;
-}
+
 #header #logo img {
 	width: 100%;
+}
+
+#header {
+	display: flex;
+}
+
+.header-1 {
+	flex-basis: 30%;
+}
+.header-2 {
+	flex-basis: 70%;
 }
 
 /* Button */
@@ -57,23 +58,29 @@ a:hover {
 }
 .nav_button .nav_button_bar {
 	background-color: black;
-	width: 25px;
-	height: 3px;
+	width: 26px;
+	height: 4px;
 	margin-bottom: 4px;
 }
 .menu_bar {
 	display: none;
 	text-align: right;
 	width: 100%;
-	padding-bottom: 50px;
 }
 .nav-link {
 	color: #474747;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	line-height: 22px;
 	width: 100%;
-	font-weight: lighter;
-	text-align: right;
+	font-weight: normal;
+	margin-left: -20px;
+}
+.height {
+	height: 245px;
+}
+
+.togglenone {
+	display: none;
 }
 
 .float_right {
@@ -88,12 +95,13 @@ a:hover {
 }
 
 .h2-text + p {
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 /* Images*/
 .project-screengrab {
 	width: 80%;
+	margin: 20px 0px;
 }
 /*FOOTER STYLING */
 #footer {
@@ -109,30 +117,30 @@ a:hover {
 }
 
 .footer-nav h2 {
-	font-family: Open Sans;
 	font-style: normal;
-	font-weight: 400;
-	font-size: 25px;
+	font-size: 1.3rem;
 	line-height: 34px;
-	color: #00aeff;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
-
+button a {
+	color: #fff;
+}
+button a:hover {
+	color: #fff;
+}
 .footer-nav #link-list a {
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	line-height: 27px;
 	color: #00aeff;
 	display: block;
 }
 
 #footer .footer-section a {
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 17px;
+	font-size: 1rem;
 	line-height: 28px;
 	color: #737373;
 }
@@ -140,7 +148,7 @@ a:hover {
 #footer #socials img {
 	width: 20px;
 	margin-right: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .copyright {
@@ -159,39 +167,77 @@ a:hover {
 #footer {
 	padding: 50px 20px;
 }
-
+#link-list a {
+	margin-top: 10px;
+}
+@media (min-width: 0px) and (max-width: 571px) {
+	#img {
+		display: none;
+	}
+}
 @media screen and (min-width: 572px) {
 	* {
-		font-size: 17px;
+		font-size: 18px;
 	}
 	#img {
-		width: 400px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		width: 280px;
 	}
 	/*Alignment*/
 
-	.space-left {
+	.space-left,
+	.space-right {
 		padding-left: 4%;
 	}
 
-	.space-right {
-		padding-right: 4%;
+	.margin {
+		margin-top: 3%;
 	}
+
 	#footer {
 		padding: 50px 20px;
 	}
 }
 
+@media screen and (max-width: 768px) {
+	#footer,
+	.footer-nav,
+	.flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.footer-nav h2 {
+		margin-bottom: 20px;
+	}
+}
 @media screen and (min-width: 940px) {
 	* {
 		font-size: 18px;
 	}
 	#img {
-		width: 500px;
+		width: 55%;
 	}
 
 	#header {
-		display: grid;
-		grid-template-columns: 3fr 9fr;
+		display: flex;
+	}
+
+	.header-1 {
+		flex-basis: 30%;
+	}
+	.header-2 {
+		flex-basis: 70%;
+	}
+	#header img {
+		width: 100px;
 	}
 
 	.nav_button {
