@@ -6,6 +6,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 /* HEADER STYLE STARTS */
 body {
 	font-family: 'Open Sans', segoe UI, sans-serif;
@@ -97,7 +98,6 @@ a:hover {
 /*FOOTER STYLING */
 #footer {
 	background-color: #fafafa;
-	padding: 50px 100px;
 }
 #footer #footer-logo {
 	width: 280px;
@@ -147,6 +147,19 @@ a:hover {
 	text-align: center;
 }
 
+/*Alignment*/
+
+.space-left {
+	padding-left: 4%;
+}
+
+.space-right {
+	padding-right: 4%;
+}
+#footer {
+	padding: 50px 20px;
+}
+
 @media screen and (min-width: 572px) {
 	* {
 		font-size: 17px;
@@ -175,9 +188,7 @@ a:hover {
 	#img {
 		width: 500px;
 	}
-	.container-fluid {
-		padding: 0 40px;
-	}
+
 	#header {
 		display: grid;
 		grid-template-columns: 3fr 9fr;
