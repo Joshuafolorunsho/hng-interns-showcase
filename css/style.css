@@ -4,12 +4,12 @@
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 }
 
 /* HEADER STYLE STARTS */
 html {
-	font-family: 'Open Sans', segoe UI, sans-serif;
 	scroll-behavior: smooth;
 }
 a:hover {
@@ -264,6 +264,7 @@ button a:hover {
 	.menu_bar .float_right {
 		float: none;
 	}
+
 	/*Alignment*/
 
 	.space-left {
