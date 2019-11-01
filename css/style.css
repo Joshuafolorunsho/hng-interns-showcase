@@ -44,13 +44,13 @@ a:hover {
 /* Button */
 .btn-custom {
 	background: #00aeff;
-	border-color: #00aeff;
+	color: #fff;
 }
 .btn-custom:hover {
 	background: #0097dd;
-	border-color: #0097dd;
-	transition: 0.3s ease-out;
+	color: #fff;
 }
+
 .nav_button {
 	position: absolute;
 	right: 5px;
